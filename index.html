@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - Object Generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaQuery.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="icon" href="images/ankh.png">
+    <script>
+        function $(target) {
+            return document.querySelector(target);
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="languages jcc">
+        <div class="languageItem active" onclick="changeLanguage(this)">
+            TypeScript
+        </div>
+        <div class="languageItem" onclick="changeLanguage(this)">
+            Dart
+        </div>
+    </div>
+    <h1 class="tac primary"> <span id="currentLanguage"></span> Object-Json Generator</h1>
+    <div class="row aic jcc" style="gap:16px;">
+        <div class="f1">
+            <p class="tac white">Class definition <button onclick="generate(this)">Generer</button></p>
+            <textarea id="input" class="w100"></textarea>
+        </div>
+        <div class="generateHolder  row aic jcc pointer scaleOnHover p8 spin" >
+            <img src="images/cog.svg" alt="" >
+        </div>
+        <div class="f1">
+            <p class="tac white">Generated code <button onclick="copy()">Copier</button></p>
+            <textarea id="result" class="w100"></textarea>
+        </div>
+
+    </div>
+
+    <p style="text-align:center;color:grey;font-size:11px;margin-top:16px;">CopyRight &copy; 2022 by Tamery</p>
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/app_dart.js"></script>
+    <script src="scripts/interface.js"></script>
+</body>
+
+</html>

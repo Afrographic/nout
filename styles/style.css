@@ -1,0 +1,122 @@
+:root{
+  --primary:#2BB1EE;
+  
+}
+
+* {
+  font-family: "arial";
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 400px;
+  resize: none;
+  padding:16px;
+  border:1px solid rgb(215, 215, 215);
+  border-radius: 16px;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.languages {
+  display: flex;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.languageItem.active {
+  background-color: #2BB1EE;
+  color: white;
+}
+
+.primary{
+  color:var(--primary)
+}
+.bgPrimary{
+  background-color:var(--primary)
+}
+
+.languageItem:not(.active) {
+  background-color: rgb(231, 231, 231);
+  color: rgb(174, 174, 174);
+}
+
+.languageItem {
+  padding: 16px;
+  transition: 0.25s;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+
+.w100{
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.aic {
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb{
+  justify-content: space-between;
+}
+
+.f1{
+  flex:1;
+}
+
+.tac{
+  text-align: center;
+}
+
+.white{
+  color:rgba(255, 255, 255, 0.635);
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.scaleOnHover{
+  transition:0.5s;
+}
+.scaleOnHover:hover{
+  transform:scale(1.1);
+}
+
+.red{
+  background-color: red;
+}
+
+.p8{
+  padding: 8px;
+}
+
+.p16{
+  padding: 16px;
+}
+
+.generateHolder{
+  width: 70px;
+  height: 70px;
+}
+
+body{
+      background-color: #141624;
+}
